@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/TD1/isPrime.cpp
+iostream
+-
+string
+-
+sstream
+-
+vector
+-
+math.h
+-
+
