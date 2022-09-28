@@ -45,34 +45,44 @@ int find_motive(std::string s, std::string motive)
     }
 
 // std::cout << "The file contains " << k << " words containing the motive" << motive << std::endl;
-//C:\Users\benji\OneDrive\Documents\ESIEE\C++ E4\find_motive
+//C:\Users\benji\OneDrive\Documents\ESIEE\C++ E4\find_motive/lorem_ipsum.txt
 
-int main()
+int main(int argc, char* argv[])
 {
-
+    
+    /*
     std::string path;
     std::string motive;
     
 
     std::cout << "Please enter the file-path of text and the motive :  " << std::endl;
     std::cin >> path >> motive;
+    std::cout << path << " " << motive << std::endl;
 
-    
+    */
 
     std::string textline;
-    std::fstream text(path);
-    text.open(path);
+    std::fstream text;
+    text.open(argv[1], std::ios::in);
     int counter = 0;
     if (text.is_open())
     {
     while(std::getline(text, textline))
         {
-            counter += find_motive(textline, motive);
+            counter += find_motive(textline, argv[2]);
         }
     }
+
+
     text.close();
 
-    std::cout << "The file contains " << counter << " words containing the motive" << motive << std::endl;
+    if (text.fail())
+    {
+        std::cout << "The file couldn't be opened." << std::endl;
+        return 1;
+    }
+
+    std::cout << "The file contains " << counter << " words containing the motive : " << argv[2] << std::endl;
     return 0;
 
 }
