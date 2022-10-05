@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/Vector/config.h
+
+/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/Vector/vector.cpp
+ostream
+-
+vector.hh
+/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/Vector/vector.hh
+vector
+-
+string.h
+-
+
+/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/Vector/vector.hh
+ostream
+-
+config.h
+/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/Vector/config.h
+
