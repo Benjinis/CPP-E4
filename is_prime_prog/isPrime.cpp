@@ -68,38 +68,4 @@ int main()
         }
     }
 
-    
-
-
-
-
-
-    /*
-    std::istringstream is(x);
-    int n;
-    while( is >> n )
-    {
-        std::cout <<  is(x) << std::endl;
-        if (isPrime(n))
-        {
-            std::cout << n << " is a prime : True" << std::endl;
-        }
-        else
-        {
-            std::cout << n << " is a prime : False" << std::endl;
-        }
-    }
-    */
-   
-   
-    /*
-    if (isPrime(x))
-    {
-        std::cout << x << " is a prime : True" << std::endl;
-    }
-    else
-    {
-        std::cout << x << " is a prime : False" << std::endl;
-    }
-    */
 } 
