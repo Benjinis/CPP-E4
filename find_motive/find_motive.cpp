@@ -60,29 +60,24 @@ int main(int argc, char* argv[])
     std::cout << path << " " << motive << std::endl;
 
     */
-
+    std::string textpath = argv[1];
     std::string textline;
     std::fstream text;
-    text.open(argv[1], std::ios::in);
+    text.open(textpath);
     int counter = 0;
     if (text.is_open())
     {
-    while(std::getline(text, textline))
+        while(text >> textline)
         {
             counter += find_motive(textline, argv[2]);
         }
+        text.close();
+        std::cout << "The file "<< textpath << " contains " << counter << " words containing the motive : " << argv[2] << std::endl;
+        return 0;
     }
-
-
-    text.close();
-
-    if (text.fail())
+    else
     {
-        std::cout << "The file couldn't be opened." << std::endl;
+        std::cout << "The file "<< textpath << " couldn't be opened." << std::endl;
         return 1;
     }
-
-    std::cout << "The file contains " << counter << " words containing the motive : " << argv[2] << std::endl;
-    return 0;
-
 }

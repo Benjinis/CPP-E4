@@ -1,3 +1,0 @@
-/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/find_motive/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/find_motive/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/benji/OneDrive/Documents/ESIEE/C++ E4/find_motive/build/CMakeFiles/main.dir
