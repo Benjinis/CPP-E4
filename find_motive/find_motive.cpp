@@ -73,11 +73,11 @@ int main(int argc, char* argv[])
         }
         text.close();
         std::cout << "The file "<< textpath << " contains " << counter << " words containing the motive : " << argv[2] << std::endl;
-        return 0;
+        return 1;
     }
     else
     {
         std::cout << "The file "<< textpath << " couldn't be opened." << std::endl;
-        return 1;
+        return 0;
     }
 }
