@@ -72,7 +72,7 @@ int main(int argc, char* argv[])
             counter += find_motive(textline, argv[2]);
         }
         text.close();
-        std::cout << "The file "<< textpath << " contains " << counter << " words containing the motive : " << argv[2] << std::endl;
+        std::cout << "The file "<< textpath << " contains " << counter << " words containing the motive " << argv[2] << std::endl;
         return 1;
     }
     else
