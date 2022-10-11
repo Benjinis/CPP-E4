@@ -45,7 +45,6 @@ std::vector<std::string> split(std::string s)
 
 int main()
 {
-    std::cout << "Please type positive integers." << std::endl;
     std::string x;
     std::getline(std::cin >> std::ws, x);
     
@@ -60,11 +59,11 @@ int main()
         
         if (isPrime(n))
         {
-            std::cout << n << " is a prime : True" << std::endl;
+            std::cout << n << " is a prime: True" << std::endl;
         }
         else
         {
-            std::cout << n << " is a prime : False" << std::endl;
+            std::cout << n << " is a prime: False" << std::endl;
         }
     }
 
