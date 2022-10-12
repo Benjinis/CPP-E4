@@ -6,13 +6,17 @@
 
 
 //Exercice fait avec Goulven Fournier
-bool isPrime(const int n)
+bool isPrime(const long long n)
 {
+    if (n == 0)
+    {
+        return false;
+    }
     if( n == 1)
     {
         return false;
     }
-    for (int i = 2 ; i <= sqrt(n); i++)
+    for (int i = 2 ; i <= n / 2; i++)
     {
         if (n % i == 0)
         {
@@ -22,6 +26,8 @@ bool isPrime(const int n)
     return true;
 }
 
+
+/*
 std::vector<std::string> split(std::string s)
 {
 
@@ -41,21 +47,20 @@ std::vector<std::string> split(std::string s)
     } while (end != -1);
     return txt;
 }
+*/
 
 
 int main()
 {
-    std::string x;
-    std::getline(std::cin >> std::ws, x);
-    
-
-    std::vector<std::string> nombres = split(x);
-   
-    
-    for(int i = 0; i < nombres.size(); i++)
+    /*std::string x;
+    std::getline(std::cin >> std::ws, x);*/
+    long long n;
+    while (std::cin >> n)
     {
+
+   
         
-        int n = std::stoi(nombres[i]);
+        
         
         if (isPrime(n))
         {
@@ -66,5 +71,5 @@ int main()
             std::cout << n << " is a prime: False" << std::endl;
         }
     }
-
+    
 } 
