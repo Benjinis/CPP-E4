@@ -6,7 +6,6 @@
 
 
 //exercice fait avec Goulven Fournier
-//pas fonctionnel
 
 std::vector<std::string> split(std::string s)
 {
