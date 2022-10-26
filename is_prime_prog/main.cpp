@@ -6,13 +6,10 @@
 
 
 //Exercice fait avec Goulven Fournier
-bool isPrime(const long long n)
+bool isPrime(const long long int n)
 {
-    if (n == 0)
-    {
-        return false;
-    }
-    if( n == 1)
+    
+    if( n <= 1)
     {
         return false;
     }
@@ -33,7 +30,7 @@ int main()
 {
     /*std::string x;
     std::getline(std::cin >> std::ws, x);*/
-    long long n;
+    long long int n;
     while (std::cin >> n)
     {
 
