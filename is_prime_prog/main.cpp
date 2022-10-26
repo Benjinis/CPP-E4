@@ -13,7 +13,11 @@ bool isPrime(const long long int n)
     {
         return false;
     }
-    for (int i = 2 ; i <= sqrt(n); i++)
+    if (n == 2)
+    {
+        return true;
+    }
+    for (int i = 2 ; i <= n/2 ; i++)
     {
         if (n % i == 0)
         {
@@ -31,6 +35,7 @@ int main()
     /*std::string x;
     std::getline(std::cin >> std::ws, x);*/
     long long int n;
+    
     while (std::cin >> n)
     {
 
